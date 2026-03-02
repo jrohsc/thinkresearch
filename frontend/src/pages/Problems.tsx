@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { PROBLEMS, filterProblems } from '../data/problems';
+import { filterProblems } from '../data/problems';
 import { useProgress } from '../hooks/useProgress';
 
 const DIFFICULTY_LABELS = ['', 'Easy', 'Easy-Medium', 'Medium', 'Medium-Hard', 'Hard'];

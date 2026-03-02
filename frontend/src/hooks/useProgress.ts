@@ -40,7 +40,7 @@ export function useProgress() {
     return progress[slug] || { status: 'not_started', bestScore: 0, attempts: 0 };
   };
 
-  const updateProgress = (slug: string, score: number, difficulty: number) => {
+  const updateProgress = (slug: string, score: number, _difficulty: number) => {
     setProgress(prev => {
       const current = prev[slug] || { status: 'not_started', bestScore: 0, attempts: 0 };
       const newProgress: ProblemProgress = {
