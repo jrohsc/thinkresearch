@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.problem-content h2 {
+  @apply text-xl font-bold mt-4 mb-2;
+}
+
+.problem-content h3 {
+  @apply text-lg font-semibold mt-3 mb-1;
+}
+
+.problem-content p {
+  @apply my-2;
+}
+
+.problem-content code {
+  @apply bg-slate-800 px-1 py-0.5 rounded text-sm font-mono;
+}
+
+.problem-content pre {
+  @apply bg-slate-800 p-4 rounded-lg my-4 overflow-x-auto;
+}
+
+.problem-content pre code {
+  @apply bg-transparent p-0;
+}
